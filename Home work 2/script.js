@@ -3,6 +3,7 @@ let sum = 100;
 const a = prompt(`enter the first number`);
 if (isNaN(a) || a <= 0) {
     alert(`A = ${a} is not valid number.`);
+    alert(`Sum = ${sum}`);
 } else if (a > 0) {
     alert(`A = ${a} is valid number.`);
     alert(`Sum = ${sum + +a}`);
@@ -12,6 +13,7 @@ if (isNaN(a) || a <= 0) {
 const b = prompt(`enter the second number`);
 if (isNaN(b) || b <= 0) {
     alert(`A = ${b} is not valid number.`);
+    alert(`Sum = ${sum}`);
 } else if (b > 0) {
     alert(`B = ${b} is valid number.`);
     alert(`Sum = ${sum + +b}`);
