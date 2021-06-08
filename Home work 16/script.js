@@ -11,18 +11,21 @@ let tuesday = [
 
 let tasks = [monday,tuesday];
 
-tasks = monday.concat(tuesday);
-
-tasks.forEach(function(item){
-    let time = item[1] / 60;
-        if (time > 2){
-    let cost = time * amount;
-            document.write(`<table>
-            <tr>
-                <td>Task name: ${item[0]}</td>
-                <td>Taks duration: ${time} hours</td>
-                <td>Task amount: $${cost}</td>
-            </tr>
-            </table>`)
-    }
-}); 
+tasks = monday
+  .concat(tuesday)
+  .map(function(item){
+    item[1] /= 60;
+      return item;
+  })
+  .filter(function(item){
+      return item[1] > 2; 
+  })
+  .map(function(item){
+    return document.write(`<table>
+                                <tr>
+                                  <td>Task name: ${item[0]}</td>
+                                  <td>Task duration: ${item[1]} hours</td>
+                                  <td>Task amount: $${item[1]*amount}</td>
+                                </tr>
+                         </table>`);
+  });
