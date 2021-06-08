@@ -171,8 +171,6 @@ let TRs = sports.map(function(sports){
         }
     });
 
-console.log(currentWinners);
-
     return `<tr>
                 <td style="background:lightgreen">${sports[0]}</td>
                 <td>${Europe.join('')}</td>
