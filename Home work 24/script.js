@@ -11,7 +11,7 @@ const VOICES = {
 		dog: `I can say gav-gav.`,
 	  }
 
-function Animal (name, icon, type, breed, VOICES) {
+function Animal (name, icon, type, breed) {
     this.name = name;
     this.icon = icon;
     this.type = type;
