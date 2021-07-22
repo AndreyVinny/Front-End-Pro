@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            background: rgb(240, 224, 224);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .block {
+            width: 100px;
+            height: 100px;
+            background: rgb(9, 0, 47);
+            position: relative;
+        }
+
+        .block.move {
+			transform: translateY(-30%);
+			transition: 300ms;
+		} 
+
+        .block.animtion {
+			transform: scale(1.2, 0.4);
+			transition: 300ms;
+		} 
+
+        .boom {
+            text-align: center;
+            font-size: 20px;
+            color: red;
+            margin-top: 50%;
+			transform: translateY(-50%);
+        }
+  
+    </style>
+    <title>Home wokr 29</title>
+</head>
+<body>
+    <div class="block"></div>
+    <script src="./script.js"></script>
+</body>
+</html>
