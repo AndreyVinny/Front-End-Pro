@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home work 30</title>
+    <style>
+        body{
+            min-width: 500px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: center;  
+            padding: 10px 0 50px;
+        }
+
+        .header p {
+            padding: 10px 20px;
+            border: 1px solid rgba(255, 255, 255, 0);
+            background: #fff2f2;
+            color: #fa5255;
+            font-size: 18px;
+            cursor: pointer;
+            margin-left: 5px;
+            text-transform: uppercase;
+            width: 250px;
+            text-align: center;
+        }
+
+        .header p:hover {
+            background: #fa5255;
+            color: #fff;  
+            transition: all .5s ease;
+        }
+
+        .header p:first-child {
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+        }
+        .header p:last-child{
+            border-top-right-radius: 30px;
+            border-bottom-right-radius: 30px;
+        }
+
+        img {
+            width: 45px;
+            padding: 25px;
+            border-radius: 30%;
+        }
+
+        .content {
+            max-width: 850px;
+            margin: 0 auto;
+            font-size: 22px;
+        }
+        
+        .payment_sec, .extract_sec, .settings_sec {
+            display: none;
+        }
+
+        .active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="header"></div>
+    <div class="content"></div>
+    <script src="./script.js"></script>
+</body>
+</html>
